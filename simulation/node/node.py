@@ -1,7 +1,7 @@
 from typing import Literal
 
 # Network node/machine controlled by ML agents
-class RLNode:
+class Node:
 
     def __init__(
         self, 
