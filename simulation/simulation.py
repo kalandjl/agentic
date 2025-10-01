@@ -1,6 +1,6 @@
-from agents.dumb_agent import DumbAgent
-from node.node import Node
-from environment.environment import Environment
+from dumb_agent import DumbAgent
+from node import Node
+from network_environment import NetworkEnvironment
 
 nodes = [
     # {
@@ -32,7 +32,7 @@ for node in nodes:
     node["node"] = Node(node["agent"], node["id"], node["agent_type"])
 
 # Initialize simulation environment
-environment = Environment(nodes)
+environment = NetworkEnvironment(nodes)
 
 for i in range(10):
 
